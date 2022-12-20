@@ -1,0 +1,136 @@
+@media (max-width: 1200px) {
+    section {
+        padding: 50px 0;
+    }
+
+    .nav {
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav_links {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.97);
+        font-size: 25px;
+        margin: 0 -40px;
+        z-index: 10;
+        transform: translateX(100%);
+        opacity: 0.8;
+        transition: all 0.5s;
+    }
+    .visible {
+        display: flex;
+        transform: translateX(0);
+        opacity: 0.9;
+        transition: all 0.5s;
+    }
+    .nav_link {
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+    .nav_menu{
+        display: flex;
+        color: rgb(187, 187, 187);
+    }
+    .nav_title {
+        width: auto;
+
+    }
+  
+    #home {
+        flex-direction: column;
+    }
+    .home_profile {
+        margin-bottom: 30px;
+        margin-right: 0;
+        height: 126px; 
+        width: 100%;
+        max-width: 1200px;
+    }
+    .home_bg {
+        height: 100%;
+        width:  100%;
+    }   
+    .home_title2 {
+        font-size: 60px;
+    }
+    .home_title1 {
+        font-size: 45px;
+    }
+    .home_title3 {
+        font-size: 25px;
+    }
+    .home_profile {
+        margin-bottom: 30px;
+    }
+    .home_title2 {
+        font-size: 30px;
+    }
+    .home_title1,
+    .home__title3 {
+        font-size: 25px;
+    }
+
+    .section_title {
+        font-size: 25px;
+    }
+    .section_title:after {
+        width: 110px;
+        height: 3px;
+    }
+    .section_subtitle {
+        font-weight: normal;
+    }
+
+    .about_desc {
+        padding-right: 0px;
+    }
+    .about_grid {
+        grid-template-columns: 1fr;
+    }
+    .button-cv {
+        margin-bottom: 30px;
+    }
+    .about_skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skills_title {
+        grid-column: span 3;
+    }
+    .skills_item {
+        font-size: 50px;
+        padding: 5px;
+        min-width: 75px;
+        height: 85px;
+    }
+
+    .services_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .services_item {
+        padding: 15px;
+    }
+    .services_item h3 {
+        margin-bottom: 5px;
+    }
+
+
+    .portfolio_grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    } 
+
+    .contact_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact_item {
+        padding: 18px;
+        border-radius: 10px;
+        transition: all 0.3s;
+    }
+  }
+  

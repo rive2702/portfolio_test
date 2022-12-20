@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+a:hover {
+    color: #bbbbbb;
+}
+html {
+    scroll-behavior: smooth;
+} 
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(120deg, rgb(15, 152, 198), white);
+    color: #f5f5f5;
+}
+section {
+    padding: 90px 0;
+    text-align: center;
+    background: white;
+}
+.container {
+    width: 100%;
+    display: inherit;
+    max-width: 1300px;
+    justify-content: inherit;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.section_title {
+  color: #414141;
+  font-size: 35px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.section_subtitle {
+  color: #414141;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+
+.nav{
+    position: fixed;
+    background: black;
+    transition: background 0.3s;  
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    z-index: 5;
+}
+.nav_watch {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.nav_watch p {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.nav_logo {
+    display: flex;
+    align-items: center;
+    padding-right: 50%;
+}
+.nav_title {
+    font-size: 24px;
+}
+.nav_title::before {
+    content: "<";
+    color: rgb(14, 189, 195);
+    font-size: 16px;
+}
+.nav_title::after {
+    content: "/>";
+    color: rgb(14, 189, 195);
+    font-size: 16px;
+}
+.nav_links {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.nav_link {
+    padding-left: 20px;
+}
+.nav_link a {
+    color: #8e8e8e;
+}
+.nav_link a:hover {
+    color: rgb(14, 189, 195);
+    transition: color 0.3s;
+}
+.nav_menu {
+    display: none;
+    align-items: center;
+    font-size: 35px;
+}
+
+
+/*ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}*/
+
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.54);
+    position: relative;
+  }
+#particles-js {
+    /*background-image: url(../img/bg.webp);*/
+    background: rgba(23, 18, 68, 0.897);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.home_profile {
+    height: 250px;
+    border-radius: 30%;
+    margin-right: 40px;
+    transition: filter 3s;
+}
+.home_profile:hover {
+    transform: scale3d(1.04, 1.04, 1.04);
+    transition: all 1s;
+    
+}
+.home_title2 {
+    font-size: 60px;
+    text-shadow: 1px 1px black;
+    color: #3367d6;
+    background-color: rgba(255, 255, 255, 0.148);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 5px;
+    padding: 10px;
+}
+.home_title1 {
+    font-size: 45px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px black;
+    padding-right: 40px;
+}
+.img_head {
+    padding: 2.5px;
+    position: absolute;
+}
+.home_title3 {
+    font-size: 25px;
+    color: #f5f5f5;
+    text-shadow: 1px 1px black;
+    backdrop-filter: blur(10px);
+}
+
+.about_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.about_desc {
+    text-align: left;
+    color: #414141;
+    padding-right: 80px;
+    line-height: 40px;
+    margin-left: 20px;
+} 
+.about_desc h2 {
+    color: #414141;
+    margin: 20px 0;
+  }
+.about_skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.skills_title {
+    color: #414141;
+    grid-column: span 3;
+    text-align: left;
+    margin: 20px 0;
+} 
+.skills_item {
+    font-size: 30px;
+    color: #414141;
+    padding-left: 35px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+    transition: all 0.3s;
+    min-width: 130px;
+    height: 120px;
+}
+.skills_item img {
+    max-height: 50px;
+    max-width: 100px;
+}
+.skills_itemName {
+    font-size: 16px;
+    text-align: center;
+}
+.skill_name {
+    font-size: 16px;
+    text-align: center;
+}
+ 
+
+#services {
+  background-image: url(../img/ubi.webp);
+}
+.services_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.services_item {
+    padding: 20px;
+    /* background: rgba(245,245,245,0.6); */
+    border-bottom: 5px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s;
+}  
+.services_item:hover i {
+    transform: rotateX(150deg);
+    transform: rotateY(150deg);
+    transition: all 0.5s;
+    color: #000000;
+} 
+.services_item i {
+    transition: all 0.3s;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.services_item h3 {
+  color: #414141;
+  margin-bottom: 15px;
+}  
+.services_item p {
+  color: #414141;
+}
+
+
+.fa-mobile-screen {
+    color: rgb(131, 32, 184);
+    content: \f3cf;
+}
+.fa-code {
+    color: rgb(222, 159, 51);
+    content: \f3B9;
+}
+.fa-database {
+    color: rgb(31, 175, 175);
+    content: \f1c0;
+}
+.fa-share-nodes {
+    color: rgb(41, 39, 169);
+    content: \f1e0;
+}
+.fa-cube {
+    color: rgb(204, 35, 35);
+    content: \f1b2;
+}
+.fa-screwdriver-wrench {
+    color: rgb(56, 207, 81);
+    content: \f7d9;
+}
+.fa-gitgub{
+    color: black;
+}
+
+.fa-instagram{
+    color: rgb(56, 207, 81);
+}
+
+
+.portfolio_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.portfolio_item {
+    background: white;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.portfolio_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 1s;
+    border-radius: 10px;
+    max-height: 190px;
+} 
+.portfolio_desc {
+    padding: 50px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 300px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.portfolio_item:hover .portfolio_desc {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+    border-radius: 10px;
+    transform: translateY(-300px);
+}
+.portfolio_item:hover .portfolio_img {
+    transition: all 1s;
+    border-radius: 10px;
+    transform: scale(1.3);
+}
+.portfolio_desc-title {
+    color: #ffffff;
+}
+.portfolio_desc-text {
+    margin: 20px 0;
+}
+  
+
+.button_container {
+    display: flex;
+    border-radius: 10px;
+}
+.button {
+    background: #191919;
+    color: #f5f5f5;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 12px;
+}  
+.button:hover {
+    color: blue;
+} 
+.button-cv {
+    background: rgb(14, 78, 14);
+    color: #ffffff;
+    padding: 5px 30px;
+    display: inline-block;
+    align-self: center;
+    margin: 20px auto;
+    font: bold;
+    border-radius: 5px;
+}
+.button-cv i {
+    margin-right: 10px;
+}
+.button-cv:hover {
+    background: #414141;
+    color: rgb(14, 189, 195);
+}
+
+
+#contact {
+  background-image: url(../img/ubi.webp);
+}
+.contact_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+} 
+.contact_item {
+    color: #414141;
+    padding: 40px;
+    transition: all 0.3s;
+}
+.contact_item i {
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.contact_item p{
+    color: black;
+    margin-top: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.fa-instagram:hover {
+    transform: scale3d(1.3,1.3,1.3);
+    transition: all 0.3s;   
+}
+.fa-instagram:hover,
+.i-twitter img:hover,
+.i-linkedin img:hover,
+.i-mail img:hover {
+    transform: scale3d(1.3,1.3,1.3);
+    transition: all 0.3s;
+    color: firebrick;
+}
+  
+.footer {
+    color: #414141;
+    background-color: rgba(245,245,245,0.6);
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.footer a {
+    color: rgb(48, 47, 47);
+}
+  
+.footer a:hover {
+    color: rgb(14, 189, 195);
+}
+
+
+.active a {
+    color: #f5f5f5;
+}
